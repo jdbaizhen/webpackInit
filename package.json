@@ -1,0 +1,44 @@
+{
+  "name": "webpackinit",
+  "version": "1.0.0",
+  "description": "webapck4.0搭建前端环境",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --optimize-minimize --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdbaizhen/webpackInit.git"
+  },
+  "author": "jdbaizhen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdbaizhen/webpackInit/issues"
+  },
+  "homepage": "https://github.com/jdbaizhen/webpackInit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "es6-promise": "^4.2.5",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "lodash": "^4.17.11",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
+  }
+}
